@@ -3,74 +3,67 @@ import project2 from "../assets/projects/project-2.jpg";
 import project3 from "../assets/projects/project-3.jpg";
 import project4 from "../assets/projects/project-4.jpg";
 
-export const HERO_CONTENT = `I am a passionate Software Engineer with a knack for crafting robust and scalable web applications. With 5 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, PostgreSQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
+export const HERO_CONTENT = `I am a passionate Computer Science and Mathematics student at Colby College with a keen interest in Machine Learning and Software Engineering. With hands-on experience in projects ranging from AI-powered platforms to financial SaaS solutions, I aim to leverage my skills in creating innovative technologies that solve real-world problems.`;
 
-export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer with a passion for creating efficient and user-friendly web applications. With 5 years of professional experience, I have worked with a variety of technologies, including React, Next.js, Node.js, MySQL, PostgreSQL, and MongoDB. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects.`;
+export const ABOUT_TEXT = `I am a dedicated and versatile student developer with a passion for creating efficient and innovative solutions. Currently pursuing a double major in Computer Science and Mathematics at Colby College, I have gained experience in various technologies including Python, Java, JavaScript, and TypeScript. My journey in technology began with a deep curiosity for how things work, and it has evolved into a pursuit where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I'm involved in campus activities and have a keen interest in quantitative research and advanced computing technologies.`;
 
 export const EXPERIENCES = [
   {
-    year: "2023 - Present",
-    role: "Senior Full Stack Developer",
-    company: "Google Inc.",
-    description: `Led a team in developing and maintaining web applications using JavaScript, React.js, and Node.js. Implemented RESTful APIs and integrated with MongoDB databases. Collaborated with stakeholders to define project requirements and timelines.`,
-    technologies: ["Javascript", "React.js", "Next.js", "mongoDB"],
+    year: "May 2024 - Present",
+    role: "Machine Learning Engineer",
+    company: "SureStart",
+    description: `Collaborated on a team to develop and optimize predictive models using TensorFlow and PyTorch, resulting in a 20% increase in model accuracy. Crafted an NLP system with sentiment analysis, boosting customer service efficiency by 40%. Improved an image recognition system, reducing processing times by 30% and increasing detection accuracy by 25%.`,
+    technologies: ["Python", "TensorFlow", "PyTorch", "NLP"],
   },
   {
-    year: "2022 - 2023",
-    role: "Frontend Developer",
-    company: "Adobe",
-    description: `Designed and developed user interfaces for web applications using Next.js and React. Worked closely with backend developers to integrate frontend components with Node.js APIs. Implemented responsive designs and optimized frontend performance.`,
-    technologies: ["HTML", "CSS", "Vue.js", "mySQL"],
+    year: "August 2024 - Present",
+    role: "Software Engineering Mentee",
+    company: "Two Sigma Mentor Connect Program",
+    description: `Partnered with a Software Engineer at Two Sigma to gain insights into advanced computing technologies and quantitative research methodologies. Engaged in personalized workshops and technical sessions, enhancing skills in algorithm development, data structures, and software optimization.`,
+    technologies: ["Algorithm Development", "Data Structures", "Software Optimization"],
   },
   {
-    year: "2021 - 2022",
-    role: "Full Stack Developer",
-    company: "Facebook",
-    description: `Developed and maintained web applications using JavaScript, React.js, and Node.js. Designed and implemented RESTful APIs for data communication. Collaborated with cross-functional teams to deliver high-quality software products on schedule.`,
-    technologies: ["Python", "Svelte", "Three.js", "Postgres"],
-  },
-  {
-    year: "2020 - 2021",
-    role: "Software Engineer",
-    company: "Paypal",
-    description: `Contributed to the development of web applications using JavaScript, React.js, and Node.js. Managed databases and implemented data storage solutions using MongoDB. Worked closely with product managers to prioritize features and enhancements.`,
-    technologies: ["Ruby", "Rails", "PHP", "Sqlite"],
+    year: "February 2024 - May 2024",
+    role: "CS152 Lab Assistant",
+    company: "Colby College",
+    description: `Conducted code reviews and offered constructive feedback to students in a class of 60+, contributing to a 15% higher pass rate. Assisted in explaining complex programming concepts and debugging code.`,
+    technologies: ["Python", "Teaching", "Code Review"],
   },
 ];
 
 export const PROJECTS = [
   {
-    title: "E-Commerce Website",
+    title: "Horizon: Financial SaaS Platform",
     image: project1,
     description:
-      "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
-    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
+      "Developed a comprehensive financial SaaS platform using Next.js and TypeScript, incorporating Plaid and Dwolla for real-time transaction processing and multi-bank connectivity.",
+    technologies: ["Next.js", "TypeScript", "Plaid", "Dwolla", "TailwindCSS", "Chart.js"],
   },
   {
-    title: "Task Management App",
+    title: "AI-Powered Podcast Platform",
     image: project2,
     description:
-      "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
-    technologies: ["HTML", "CSS", "Angular", "Firebase"],
+      "Designed and built a Next.js and TypeScript-based AI SaaS platform featuring multi-voice synthesis and image generation, enhancing podcast creation and discovery by 35%.",
+    technologies: ["Next.js", "TypeScript", "Convex", "Clerk", "TailwindCSS"],
   },
   {
-    title: "Portfolio Website",
+    title: "CPU Performance Monitoring System",
     image: project3,
     description:
-      "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "React", "Bootstrap"],
+      "Engineered a Flask-based Python monitoring tool to oversee CPU performance, managing end-to-end development from local environment setup to cloud deployment.",
+    technologies: ["Python", "Flask", "Docker", "Kubernetes", "AWS EKS", "AWS ECR"],
   },
   {
-    title: "Blogging Platform",
+    title: "Lead Python Instructor & Curriculum Architect",
     image: project4,
     description:
-      "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-    technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
+      "Led the Appiadu Girls Code Club as a Python instructor, developing curriculum and teaching programming concepts to aspiring female coders.",
+    technologies: ["Python", "Teaching", "Curriculum Development"],
   },
 ];
 
 export const CONTACT = {
   address: "4000 Mayflower Hill Drive, Waterville, ME",
-  phoneNo: "+1-830-1361",
+  phoneNo: "(207)-830-1361",
   email: "jbfeib27@colby.edu",
 };
