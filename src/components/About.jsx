@@ -1,7 +1,10 @@
-import React from 'react'
 import aboutImg from "../assets/about.jpg"
 import { ABOUT_TEXT } from '../constants'
 import {motion} from "framer-motion"
+import { Canvas } from '@react-three/fiber'
+import { OrbitControls } from '@react-three/drei'
+import Laptop3D from './Laptop3D'
+
 const About = () => {
   return (
     <div className='border-b bordernu900 pb-4'>
@@ -28,6 +31,16 @@ const About = () => {
             <p className='my-2 max-w-xl py-6'> {ABOUT_TEXT}</p>
           </div>
         </motion.div>
+      </div>
+      <div className="w-full h-[500px] my-8">
+        <Canvas camera={{ position: [0, 0, 10], fov: 50 }}>
+          {/* eslint-disable-next-line react/no-unknown-property */}
+          <ambientLight intensity={0.5} />
+          {/* eslint-disable-next-line react/no-unknown-property */}
+          <pointLight position={[10, 10, 10]} />
+          <Laptop3D />
+          <OrbitControls enableZoom={false} />
+        </Canvas>
       </div>
     </div>
   );
