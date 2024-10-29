@@ -7,5 +7,14 @@ export default {
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    function({ addUtilities }) {
+      addUtilities({
+        '.perspective-1000': {
+          perspective: '1000px',
+          'transform-style': 'preserve-3d',
+        },
+      })
+    },
+  ],
 }
