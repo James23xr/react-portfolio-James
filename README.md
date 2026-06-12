@@ -1,62 +1,66 @@
-# James Bernard Amoah Fei-Baffoe's Portfolio
+# James Fei-Baffoe — Portfolio
 
-Welcome to my portfolio repository! This project showcases my skills, experiences, and projects as a Computer Science and Mathematics student at Colby College.
+[![CI](https://github.com/James23xr/react-portfolio-James/actions/workflows/ci.yml/badge.svg)](https://github.com/James23xr/react-portfolio-James/actions/workflows/ci.yml)
 
-## 🚀 Project Overview
+Personal portfolio of **James Bernard Amoah Fei-Baffoe** — software engineer and Computer Science & Mathematics student at Colby College. SWE Intern at LinkedIn (Summer 2026), previously at Gusto; first-place winner of JPMorgan Chase's Code for Good hackathon.
 
-This portfolio is built as a single-page application using React and Vite. It highlights my technical skills, projects, and professional experiences in the field of Computer Science and Software Engineering.
+**Live site:** [jamesfeibaffoe.vercel.app](https://jamesfeibaffoe.vercel.app/)
 
-## 🛠 Technologies Used
+## Tech Stack
 
-- React.js
-- Vite
-- Tailwind CSS
-- Framer Motion
-- React Icons
+- [React 18](https://react.dev/) + [Vite](https://vitejs.dev/) — fast SPA with instant HMR
+- [Tailwind CSS](https://tailwindcss.com/) — utility-first styling
+- [Framer Motion](https://www.framer.com/motion/) — scroll-triggered animations with `prefers-reduced-motion` support
+- [React Icons](https://react-icons.github.io/react-icons/) — technology and social iconography
 
-## 🔧 Setup and Installation
+## Highlights
 
-To run this project locally:
+- **Single source of truth** — all content (experience, projects, education, links) lives in [`src/constants/index.js`](src/constants/index.js); components are purely presentational
+- **SEO-ready** — Open Graph and Twitter cards, canonical URL, JSON-LD `Person` structured data, `robots.txt`, and `sitemap.xml`
+- **Accessible** — semantic landmarks, skip-to-content link, ARIA labels on icon-only controls, visible focus rings, and animations that respect reduced-motion preferences
+- **Performance-conscious** — no heavy 3D dependencies, lazy-loaded below-the-fold images with explicit dimensions to prevent layout shift
+- **CI** — every push and pull request is linted and built via GitHub Actions
 
-1. Clone the repository:
-   ```
-   git clone https://github.com/James23xr/react-portfolio-James.git
-   ```
-2. Navigate to the project directory:
-   ```
-   cd react-portfolio-James
-   ```
-3. Install dependencies:
-   ```
-   npm install
-   ```
-4. Start the development server:
-   ```
-   npm run dev
-   ```
-5. Open your browser and visit `http://localhost:5173` to view the portfolio.
+## Getting Started
 
-## 📂 Project Structure
+```bash
+git clone https://github.com/James23xr/react-portfolio-James.git
+cd react-portfolio-James
+npm install
+npm run dev
+```
 
-- `src/components/`: React components used throughout the site
-- `src/constants/`: Constant data used in the portfolio
-- `src/assets/`: Images and other static assets
+The site runs at `http://localhost:5173`.
 
-## 🎨 Features
+## Scripts
 
-- Responsive design
-- Interactive UI elements
-- Sections for About, Projects, Experience, and Contact
-- Integration with GitHub and LinkedIn
+| Command           | Description                          |
+| ----------------- | ------------------------------------ |
+| `npm run dev`     | Start the development server         |
+| `npm run build`   | Production build to `dist/`          |
+| `npm run preview` | Preview the production build locally |
+| `npm run lint`    | Run ESLint (zero-warning policy)     |
 
-## 🤝 Contributing
+## Project Structure
 
-While this is a personal portfolio project, I'm open to suggestions and feedback. Feel free to open an issue or submit a pull request if you have any ideas for improvement.
+```
+├── .github/workflows/   # CI (lint + build)
+├── public/              # Static assets: resume, favicon, OG image, robots, sitemap
+├── src/
+│   ├── assets/          # Images
+│   ├── components/      # Presentational React components
+│   ├── constants/       # All site content and links (single source of truth)
+│   ├── App.jsx          # Page layout and section composition
+│   └── main.jsx         # Entry point
+└── index.html           # SEO meta, fonts, structured data
+```
 
-## 📫 Contact
+## Deployment
 
-- LinkedIn: [James Bernard Amoah Fei-Baffoe](https://www.linkedin.com/in/james-bernard-amoah-fei-baffoe/)
-- GitHub: [James23xr](https://github.com/James23xr)
-- Email: jbfeib27@colby.edu
+Deployed on [Vercel](https://vercel.com/). Every push to `main` triggers a production deployment; the build is also verified in CI.
 
-Thank you for visiting my portfolio repository!
+## Contact
+
+- **Email:** [jbfeib27@colby.edu](mailto:jbfeib27@colby.edu)
+- **LinkedIn:** [james-fei-baffoe](https://www.linkedin.com/in/james-fei-baffoe/)
+- **GitHub:** [James23xr](https://github.com/James23xr)
