@@ -19,28 +19,30 @@ export const NAV_LINKS = [
   { label: "Contact", href: "#contact" },
 ];
 
-export const HERO_BADGE = "Software Engineer Intern @ LinkedIn · Summer 2026";
+export const HERO_BADGE = "Colby College '27 · Prev. SWE Intern @ LinkedIn & Gusto";
 
-export const HERO_CONTENT = `I'm a Computer Science and Mathematics student at Colby College and a
-Software Engineer Intern at LinkedIn, where I build LLM agent infrastructure powering an AI
-assistant for 20,000+ employees. Previously at Gusto, I shipped a payment-recovery system that
-processes 100K+ failed ACH transactions and saves $1.25M annually. I care about distributed
-systems, applied machine learning, and engineering that moves real business metrics.`;
+export const HERO_CONTENT = `I'm a Computer Science student at Colby College. This past summer at
+LinkedIn, I shipped Workday capabilities for the company's internal conversational HR assistant —
+stateful multi-turn agent orchestration with LangGraph, secured AI-initiated HR mutations, and
+double-digit latency wins. Before that at Gusto, I designed and launched an ACH payment-recovery
+service projected to save $1.25M annually. I care about distributed systems, applied machine
+learning, and engineering that moves real business metrics.`;
 
-export const ABOUT_TEXT = `I'm pursuing a double major in Computer Science and Mathematics at Colby
-College with a 4.0 major GPA, graduating in May 2027. My experience spans the stack: LLM agent
-infrastructure and low-latency inference pipelines at LinkedIn, payment-recovery systems
-safeguarding critical banking operations at Gusto, and BERT/CNN pipelines as a machine learning
-intern at SureStart. I led development of the donation platform that won first place at JPMorgan
-Chase's Code for Good hackathon. I'm drawn to problems where distributed systems, machine
-learning, and product impact intersect — and I sweat the details: idempotency, observability,
-p99 latency, and safe rollouts.`;
+export const ABOUT_TEXT = `I'm pursuing a B.A. in Computer Science at Colby College, graduating in
+May 2027. My experience spans the stack: at LinkedIn I shipped end-to-end Workday capabilities for
+an internal conversational HR assistant — multi-turn agent orchestration, TOCTOU-safe approval
+flows, and latency optimizations across the pipeline. At Gusto I designed and launched a Ruby on
+Rails ACH payment-recovery service projected to save $1.25M annually, and at SureStart I built
+BERT and CNN pipelines as a machine learning intern. I also led development of the donation
+platform that won first place at JPMorgan Chase's Code for Good hackathon. I'm drawn to problems
+where distributed systems, machine learning, and product impact intersect — and I sweat the
+details: idempotency, observability, fail-closed authorization, and safe rollouts.`;
 
 export const HIGHLIGHTS = [
-  { value: "20K+", label: "Employees served by the LLM-powered assistant I helped ship at LinkedIn" },
-  { value: "$1.25M", label: "Annual savings from the ACH payment-recovery system I built at Gusto" },
-  { value: "<800ms", label: "p99 latency of the LLM inference pipeline I engineered at LinkedIn" },
+  { value: "$1.25M", label: "Projected annual savings from the ACH payment-recovery service I launched at Gusto" },
+  { value: "80%", label: "Date-resolution accuracy for LinkedIn's HR assistant, up from a 50% deterministic baseline" },
   { value: "1st Place", label: "JPMorgan Chase Code for Good Hackathon, as lead developer" },
+  { value: "82%", label: "Container startup latency reduction (45s → 8s) in my distributed monitoring system" },
 ];
 
 export const EXPERIENCES = [
@@ -50,11 +52,12 @@ export const EXPERIENCES = [
     company: "LinkedIn",
     location: "Sunnyvale, CA",
     bullets: [
-      "Shipped LLM agent infrastructure — tool-calling, multi-step planning, and RAG over 10+ HR data sources — powering an AI assistant for 20K+ employees that automates onboarding, transfers, and benefits workflows end-to-end.",
-      "Engineered a low-latency inference pipeline on LinkedIn's distributed stack, driving p99 below 800ms via prompt caching, speculative tool execution, and async fan-out.",
-      "Built an eval harness and guardrails for hallucination and PII leakage, enabling a safe rollout to HR operations.",
+      "Shipped end-to-end Workday capabilities for LinkedIn's internal conversational HR assistant using Python, LangGraph, React, TypeScript, Remix, gRPC, and REST/SOAP APIs — enabling natural-language time-off, recorded-time, timecard submission, and feedback workflows.",
+      "Built stateful, multi-turn agent orchestration with model-directed tool sequencing, structured outputs, conversation memory, and date/intent interpretation — achieving 80% date-resolution accuracy against a 50% deterministic baseline and reducing excluded-date errors from 6.7% to 0% in live evaluations.",
+      "Secured AI-initiated HR mutations with human approval, owner-bound and TOCTOU-safe confirmation claims, idempotency controls, fail-closed authorization, PII-safe logging, and read-after-write verification.",
+      "Optimized concurrent data retrieval, identity caching, and HTTP client reuse — cutting contact-lookup latency by 31%, Workday identity-bootstrap latency by 50%, and median response latency by 12.5%.",
     ],
-    technologies: ["Python", "Kafka", "Pinot", "gRPC", "LLMs", "RAG"],
+    technologies: ["Python", "LangGraph", "React", "TypeScript", "Remix", "gRPC"],
   },
   {
     year: "Oct 2025",
@@ -62,11 +65,10 @@ export const EXPERIENCES = [
     company: "Code for Good Hackathon, JPMorgan Chase",
     location: "Plano, TX",
     bullets: [
-      "Led development of the first-place full-stack donation platform, built with Next.js, React, and PostgreSQL with real-time messaging.",
-      "Integrated Stripe payment processing with webhook verification and idempotent transaction handling for donations up to $100K.",
-      "Developed backend APIs and AI-powered newsletter generation for donor outreach.",
+      "Led development of a first-place donation platform using Next.js, React, TypeScript, PostgreSQL, and Python — delivering payments, real-time social features, and AI-assisted donor outreach.",
+      "Built 15+ type-safe APIs and integrated Stripe for $10–$100K donations with webhook verification and idempotent processing; reduced the donation flow from 8 steps to 2.",
     ],
-    technologies: ["Next.js", "React", "PostgreSQL", "Stripe"],
+    technologies: ["Next.js", "React", "TypeScript", "PostgreSQL", "Stripe"],
   },
   {
     year: "May 2025 — Sep 2025",
@@ -74,11 +76,12 @@ export const EXPERIENCES = [
     company: "Gusto",
     location: "San Francisco, CA",
     bullets: [
-      "Built an automated payment-recovery system processing 100K+ failed ACH transactions, saving $1.25M annually in manual processing costs.",
-      "Designed SQL queries to detect orphaned bank accounts within regulatory deadlines while maintaining transaction safety.",
-      "Implemented production monitoring with Datadog, ensuring zero disruption to critical banking operations.",
+      "Designed and launched an automated ACH/NACHA payment-recovery service in Ruby on Rails, rerouting orphaned failed payments to newly verified bank accounts within a 12-business-day window — projected to save $1.25M annually.",
+      "Built PostgreSQL/ActiveRecord eligibility queries spanning 3 payment types, 3 processing states, and 3 owner models, using outer joins and business rules across bank-account ownership and employment relationships.",
+      "Integrated the service with payment state machines, Rails observers, and callbacks using per-payment database transactions, fault isolation, and feature flags to prevent partial updates and safely roll out the financial workflow.",
+      "Expanded the end-to-end experience with secure double-entry bank verification, GraphQL paycheck-distribution mutations, customer email improvements, automated tests, structured logging, and Datadog metrics.",
     ],
-    technologies: ["SQL", "Datadog", "ACH Payments"],
+    technologies: ["Ruby on Rails", "PostgreSQL", "GraphQL", "Datadog"],
   },
   {
     year: "May 2024 — Aug 2024",
@@ -86,8 +89,8 @@ export const EXPERIENCES = [
     company: "SureStart",
     location: "Waterville, ME",
     bullets: [
-      "Built a sentiment-analysis pipeline using BERT and PyTorch to process 50K+ customer-service tickets.",
-      "Developed a CNN image-recognition system using TensorFlow, achieving a 0.89 F1-score on 10K labeled images.",
+      "Built a BERT/PyTorch sentiment-analysis pipeline processing 50K+ customer-service tickets.",
+      "Developed a TensorFlow CNN image-recognition system achieving a 0.89 F1-score on 10K labeled images.",
     ],
     technologies: ["Python", "PyTorch", "TensorFlow", "BERT"],
   },
@@ -105,19 +108,27 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
+    title: "CloudPulse — Distributed Infrastructure Monitoring",
+    image: project3,
+    description:
+      "A distributed monitoring service aggregating real-time CPU and memory telemetry across 20+ containerized microservices on AWS EKS, exposing Prometheus-compatible metrics endpoints with automated resource alerts. Reduced container startup latency by 82% (45s → 8s) through multi-stage Docker builds and ECR layer caching.",
+    technologies: ["Python", "Flask", "Prometheus", "Docker", "Kubernetes", "AWS EKS"],
+    github: "https://github.com/James23xr/CloudPulse-Real-Time-System-Monitor",
+  },
+  {
+    title: "GiveHub — Code for Good Donation Platform",
+    image: project4,
+    award: "1st Place · JPMorgan Chase Code for Good",
+    description:
+      "First-place hackathon build: a donation platform with real-time social features and AI-assisted donor outreach. 15+ type-safe APIs and a Stripe integration handling $10–$100K donations with webhook verification and idempotent processing — cutting the donation flow from 8 steps to 2.",
+    technologies: ["Next.js", "React", "TypeScript", "PostgreSQL", "Python", "Stripe"],
+  },
+  {
     title: "Horizon — Financial SaaS Platform",
     image: project1,
     description:
       "A multi-bank financial SaaS platform with real-time transaction processing. Bank connectivity through Plaid, payment transfers via Dwolla, server-side-rendered authentication with Clerk, and type-safe forms with React Hook Form and Zod. Responsive dashboards visualize financial metrics with Chart.js.",
     technologies: ["Next.js", "TypeScript", "Plaid", "Dwolla", "Clerk", "TailwindCSS", "Chart.js"],
-  },
-  {
-    title: "CloudPulse — Real-Time System Monitor",
-    image: project3,
-    description:
-      "A distributed Flask-based monitoring system tracking CPU and memory metrics across 20+ containerized microservices on AWS EKS, with custom Prometheus exporters for real-time alerting. Cut container startup time from 45s to 8s through multi-stage Docker builds and ECR caching strategies.",
-    technologies: ["Python", "Flask", "Prometheus", "Docker", "Kubernetes", "AWS EKS"],
-    github: "https://github.com/James23xr/CloudPulse-Real-Time-System-Monitor",
   },
   {
     title: "AI Podcast Studio",
@@ -127,32 +138,23 @@ export const PROJECTS = [
     technologies: ["Next.js", "TypeScript", "Convex", "Clerk", "TailwindCSS"],
     github: "https://github.com/James23xr/ai-podcast-studio",
   },
-  {
-    title: "GiveHub — Code for Good Donation Platform",
-    image: project4,
-    award: "1st Place · JPMorgan Chase Code for Good",
-    description:
-      "First-place hackathon build: a full-stack donation platform with real-time messaging, Stripe payments hardened with webhook verification and idempotent transaction handling for donations up to $100K, and AI-powered newsletter generation for donor outreach.",
-    technologies: ["Next.js", "React", "PostgreSQL", "Stripe"],
-  },
 ];
 
 export const EDUCATION = {
   school: "Colby College",
   location: "Waterville, Maine",
-  degree: "B.A. in Computer Science & Mathematics (Double Major)",
+  degree: "B.A. in Computer Science",
   graduation: "Expected May 2027",
-  gpa: "4.0 Major GPA",
+  gpa: "4.04 Recent Semester GPA · 3.74 Cumulative",
   coursework: [
     "Data Structures",
-    "Analysis of Algorithms",
+    "Algorithms & OOP (Java)",
+    "Linear Algebra",
     "Software Engineering",
     "Operating Systems",
-    "Programming Languages",
+    "Analysis of Algorithms",
     "Neural Networks",
     "Parallel Computing (MIT)",
-    "Linear Algebra",
-    "Data Analysis & Visualization",
   ],
   awards: [
     "1st Place — JPMorgan Chase Code for Good Hackathon (2025)",

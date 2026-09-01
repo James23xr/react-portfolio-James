@@ -5,11 +5,12 @@ import {
   SiTensorflow,
   SiPytorch,
   SiJavascript,
-  SiFlask,
   SiPostgresql,
   SiDocker,
   SiKubernetes,
-  SiApachekafka,
+  SiRuby,
+  SiRubyonrails,
+  SiGraphql,
 } from "react-icons/si";
 import { DiPython, DiJava } from "react-icons/di";
 import { FaAws } from "react-icons/fa";
@@ -20,14 +21,15 @@ const TECHNOLOGIES = [
   { name: "JavaScript", icon: SiJavascript, color: "text-yellow-400", duration: 5 },
   { name: "TypeScript", icon: TbBrandTypescript, color: "text-blue-600", duration: 2 },
   { name: "C++", icon: TbBrandCpp, color: "text-blue-700", duration: 4.5 },
+  { name: "Ruby", icon: SiRuby, color: "text-red-600", duration: 3.5 },
   { name: "React", icon: RiReactjsLine, color: "text-cyan-400", duration: 6 },
   { name: "Next.js", icon: TbBrandNextjs, color: "text-white", duration: 4 },
-  { name: "Flask", icon: SiFlask, color: "text-neutral-200", duration: 3.5 },
+  { name: "Ruby on Rails", icon: SiRubyonrails, color: "text-red-500", duration: 5.2 },
+  { name: "GraphQL", icon: SiGraphql, color: "text-pink-500", duration: 2.6 },
   { name: "PostgreSQL", icon: SiPostgresql, color: "text-sky-600", duration: 5.5 },
   { name: "Docker", icon: SiDocker, color: "text-blue-400", duration: 2.8 },
   { name: "Kubernetes", icon: SiKubernetes, color: "text-blue-500", duration: 4.2 },
   { name: "AWS", icon: FaAws, color: "text-orange-400", duration: 3.2 },
-  { name: "Kafka", icon: SiApachekafka, color: "text-neutral-100", duration: 5.2 },
   { name: "TensorFlow", icon: SiTensorflow, color: "text-orange-500", duration: 3.8 },
   { name: "PyTorch", icon: SiPytorch, color: "text-orange-600", duration: 4.8 },
 ];
