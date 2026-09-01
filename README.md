@@ -2,7 +2,7 @@
 
 [![CI](https://github.com/James23xr/react-portfolio-James/actions/workflows/ci.yml/badge.svg)](https://github.com/James23xr/react-portfolio-James/actions/workflows/ci.yml)
 
-Personal portfolio of **James Bernard Amoah Fei-Baffoe** — software engineer and Computer Science & Mathematics student at Colby College. SWE Intern at LinkedIn (Summer 2026), previously at Gusto; first-place winner of JPMorgan Chase's Code for Good hackathon.
+Personal portfolio of **James Bernard Amoah Fei-Baffoe** — software engineer and Computer Science student at Colby College (Class of 2027). SWE internships at LinkedIn (Summer 2026) and Gusto (Summer 2025); first-place winner of JPMorgan Chase's Code for Good hackathon.
 
 **Live site:** [jamesfeibaffoe.vercel.app](https://jamesfeibaffoe.vercel.app/)
 
